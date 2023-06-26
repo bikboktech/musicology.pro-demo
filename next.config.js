@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+require("dotenv").config();
 
-module.exports = nextConfig
+const nextConfig = {};
+
+// const apiUrl = process.env.NEXT_PUBLIC_X_TENANT_ID;
+
+module.exports = nextConfig;

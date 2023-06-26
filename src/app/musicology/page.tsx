@@ -5,8 +5,15 @@ import { Grid, Box, Card, Stack, Typography } from "@mui/material";
 import PageContainer from "@/app/(DashboardLayout)/components/container/PageContainer";
 import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
 import PlaylistDownloader from "./PlaylistDownloader";
+import { GetStaticProps } from "next";
 
-const Login2 = () => {
+// export const getStaticProps: GetStaticProps<{
+//   apiUrl: string | undefined;
+// }> = async () => {
+//   return { props: { apiUrl: process.env.API_URL } };
+// };
+
+const Musicology = () => {
   return (
     <PageContainer title="Download" description="page for playlist downloading">
       <Box
@@ -54,33 +61,6 @@ const Login2 = () => {
                     Playlist Downloader
                   </Typography>
                 }
-                subtitle={
-                  <Stack
-                    direction="row"
-                    spacing={1}
-                    justifyContent="center"
-                    mt={3}
-                  >
-                    <Typography
-                      color="textSecondary"
-                      variant="h6"
-                      fontWeight="500"
-                    >
-                      New to Modernize?
-                    </Typography>
-                    <Typography
-                      component={Link}
-                      href="/authentication/register"
-                      fontWeight="500"
-                      sx={{
-                        textDecoration: "none",
-                        color: "primary.main",
-                      }}
-                    >
-                      Create an account
-                    </Typography>
-                  </Stack>
-                }
               />
             </Card>
           </Grid>
@@ -89,4 +69,4 @@ const Login2 = () => {
     </PageContainer>
   );
 };
-export default Login2;
+export default Musicology;
